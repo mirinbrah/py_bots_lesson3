@@ -16,7 +16,6 @@ MAX_HISTORY_SIZE = 20
 # Создаем роутер
 router = Router()
 
-
 #Хэндлеры
 
 @router.message(CommandStart())
