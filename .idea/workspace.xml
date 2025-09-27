@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cef2b91-1c34-4c34-b283-a3644aebc116" name="Changes" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/decorators_example.py" afterDir="false" />
+    <list default="true" id="6cef2b91-1c34-4c34-b283-a3644aebc116" name="Changes" comment="oop_example moved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop_demonstration.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop_demonstration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.decorators_example.executor": "Run",
+    "Python.oop_demonstration.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -108,12 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1758944006372</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="oop_example moved">
+      <option name="closed" value="true" />
+      <created>1758947450684</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758947450684</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gitignore added" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="oop_example moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="oop_example moved" />
   </component>
 </project>

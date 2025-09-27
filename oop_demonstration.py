@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 class Dog:
     def __init__(self, name, age,breed):
         self.name = name
@@ -11,11 +14,30 @@ class Dog:
     def get_info(self):
         return f"Это {self.breed} по кличке {self.name}, ему {self.age} лет."
 
+    @staticmethod
+    def to_human_years(dog_years):
+        # Эта функция ничего не знает про self.name или self.age
+        return dog_years * 7
+
+    @classmethod
+    def from_birth_year(cls, name, breed, birth_year):
+        # cls - это сам класс Dog
+        current_year = datetime.now().year
+        age = current_year - birth_year
+        # Вызываем обычный конструктор __init__ через cls
+        return cls(name, age, breed)
+
+buddy = Dog.from_birth_year("Бадди", "корги", 2020)
+print(buddy.get_info())
+
 rex =Dog("Песя",10, "овчарка")
 
 rex.get_info()
+#Dog.get_info(rex) под капотом
+rex.to_human_years(rex.age)
 
-#1 Инкапсуляция, отдельным уроком разобрать __attr
+
+#1 Инкапсуляция примером ближе к сути, отдельным уроком разобрать __attr и Искажение имён (Name Mangling)
 
 class BankAccount:
     def __init__(self, owner_name, real_balance):
@@ -48,7 +70,7 @@ my_account.withdraw(100)
 
 #2 Наследование
 #3 И в этом же примере полиморфизм
-
+#4 И абстракция
 
 class Animal:
     def __init__(self, name):
@@ -82,5 +104,3 @@ print(dog.speak())
 print(cat.speak())
 
 print(cat.purr())
-
-#Абстракция - рассказать на словах и, возможно, вынести на другой урок
