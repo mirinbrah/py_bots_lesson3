@@ -17,7 +17,6 @@ MAX_HISTORY_SIZE = 20
 router = Router()
 
 #Хэндлеры
-
 @router.message(CommandStart())
 async def cmd_start(message: Message):
     """Отправляет приветственное сообщение по команде /start."""
